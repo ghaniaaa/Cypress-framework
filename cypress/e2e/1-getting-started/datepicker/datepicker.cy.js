@@ -22,7 +22,7 @@ cy.get('#UserName').type('Tahir')
 
      //navigate event
           cy.get('#NavPage-67738 > a').click()
-     //Create event
+     //Create EVENT
           cy.get('.add-event-btn').click()
           cy.get('#evtNameTb').type('Event posted by cypress') //mandatory field
           cy.get('#CategoryId').select('Meeting')
