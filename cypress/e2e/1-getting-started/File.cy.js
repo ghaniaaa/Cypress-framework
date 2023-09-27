@@ -1,4 +1,4 @@
-
+import "cypress-xpath"
 describe('login into online communities using cypress', ()=>{
     it('login successfully', () => {
 
@@ -10,7 +10,10 @@ describe('login into online communities using cypress', ()=>{
 
          //Navigate to announcemnet page
          cy.get('#NavPage-67757 > a').click()
-
          
+         //uploading file from PC
+        //  cy.get('#file-uploader > input').click()
+        // cy.xpath("//input[@type='file' ] [1]").click()
+        cy.contains('Add file').click()
     })
 })
